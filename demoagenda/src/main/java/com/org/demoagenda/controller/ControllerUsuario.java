@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/usuario")
+@CrossOrigin("*")
 public class ControllerUsuario {
 
     @Autowired
@@ -17,7 +18,7 @@ public class ControllerUsuario {
     @Autowired
     private IRepoUsuario repoUsuario;
 
-    @PostMapping("/login")
+    @GetMapping("/login")
     public Integer getLogin(@RequestParam("email") String email,
                                            @RequestParam("password") String password) {
         return serviceUsuario.getLogin(email,password);
