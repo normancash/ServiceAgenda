@@ -10,5 +10,5 @@ public interface IServiceAgenda {
 
     public List<Agenda> getAll();
 
-    public void create(Agenda agenda);
+    public Agenda create(Agenda agenda);
 }

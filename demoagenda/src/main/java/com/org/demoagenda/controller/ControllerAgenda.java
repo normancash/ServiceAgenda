@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/agenda")
+@CrossOrigin("*")
 public class ControllerAgenda {
 
     @Autowired
@@ -20,7 +21,7 @@ public class ControllerAgenda {
     }
 
     @PostMapping("/create")
-    public void create(@RequestBody Agenda agenda) {
-        serviceAgenda.create(agenda);
+    public Agenda create(@RequestBody Agenda agenda) {
+        return serviceAgenda.create(agenda);
     }
 }
