@@ -20,6 +20,6 @@ public class ServiceAgenda implements IServiceAgenda{
 
     @Override
     public Agenda create(Agenda agenda) {
-        return repoAgenda.save(agenda);
+       return repoAgenda.save(agenda);
     }
 }
