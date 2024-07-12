@@ -20,7 +20,7 @@ public class ControllerUsuario {
     private IRepoUsuario repoUsuario;
 
     @PostMapping("/login")
-    public Integer getLogin(@RequestParam("email") String email,
+    public Usuario getLogin(@RequestParam("email") String email,
                                            @RequestParam("password") String password) {
         return serviceUsuario.getLogin(email,password);
     }

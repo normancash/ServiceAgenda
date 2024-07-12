@@ -11,4 +11,5 @@ public class Usuario extends IdentifiedId{
 
     private String password;
 
+
 }

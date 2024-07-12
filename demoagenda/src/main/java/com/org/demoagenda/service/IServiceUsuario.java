@@ -1,9 +1,10 @@
 package com.org.demoagenda.service;
 
+import com.org.demoagenda.model.Usuario;
 import org.springframework.stereotype.Service;
 
 @Service
 public interface IServiceUsuario {
 
-    int getLogin(String email, String password);
+    Usuario getLogin(String email, String password);
 }
